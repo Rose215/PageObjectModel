@@ -1,0 +1,14 @@
+com\nopcommerce\base\BasePage.class
+com\nopcommerce\base\BaseTest.class
+com\nopcommerce\pages\SearchPage.class
+com\nopcommerce\utils\JavaScriptUtil.class
+com\nopcommerce\utils\ExcelUtil.class
+com\nopcommerce\pages\LoginPage.class
+com\nopcommerce\pages\RegisterPage.class
+com\nopcommerce\utils\Constants.class
+com\nopcommerce\testlisteners\ExtentReportListener.class
+com\nopcommerce\utils\ElementUtil.class
+com\nopcommerce\pages\ShoppingCartPage.class
+com\nopcommerce\pages\HomePage.class
+com\nopcommerce\pages\WishlistPage.class
+com\nopcommerce\testlisteners\AllureReportListener.class

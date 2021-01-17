@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="nopCommerce Regression Test Suite" parallel="tests" thread-count="4" verbose="3" >
+    <listeners>
+        <listener class-name="com.nopcommerce.testlisteners.ExtentReportListener"></listener>
+        <listener class-name="com.nopcommerce.testlisteners.AllureReportListener"></listener>
+    </listeners>
+    
+    <test name="Homepage Test" >
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.nopcommerce.tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="RegisterPage Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.nopcommerce.tests.RegisterPageTest"/>
+        </classes>
+    </test>
+
+    <test name="LoginPage Test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.nopcommerce.tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="SearchPage Test">
+        <classes>
+            <class name="com.nopcommerce.tests.SearchPageTest"/>
+        </classes>
+    </test>
+
+</suite>
+
