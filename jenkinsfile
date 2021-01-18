@@ -8,7 +8,7 @@ agent any
 		}
 		
 		stage('Test'){
-			step{
+			steps{
 				catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
 					sh "mvn clean install"
 				}
